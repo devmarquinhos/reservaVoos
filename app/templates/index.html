@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Velvet</title>
+
+    <!-- Importando o CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/style.css") }}">
+</head>
+<body>
+    <h1>Purple Velvet</h1>
+    {% if user %}
+        <p>Bem-vindo ao sistema {{ user }}.</p>
+    {% else %}
+        <p>Bem-vindo ao sistema, faça um cadastro para continuar.</p>
+    {% endif %}
+
+    <script src="{{ url_for('static', filename="js/script.js") }}"></script>
+</body>
+</html>
