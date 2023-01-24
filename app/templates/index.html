@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Velvet</title>
 
-    <!-- Importando o CSS -->
+    <!-- Importando o CSS usando url_for() do python-->
     <link rel="stylesheet" href="{{ url_for('static', filename="css/style.css") }}">
 </head>
 <body>
     <h1>Purple Velvet</h1>
-    {% if user %}
+    {% if user %} <!-- Sintaxe Jinja (ou Python) para usar uma condicional dentro do HTML-->
         <p>Bem-vindo ao sistema {{ user }}.</p>
     {% else %}
         <p>Bem-vindo ao sistema, faça um cadastro para continuar.</p>
