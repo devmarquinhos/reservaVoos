@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Importando as fontes -->
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,400,700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando o CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/loginPage.css") }}">
+    <title>Purple Velvet - Login</title>
+</head>
+<body>
+    <h1>Pagina de login</h1>
+    <form action="" method="POST">
+        <label for="username">Username</label>
+        {{ form.username(class="userInput", placeholder="Nome de usuário") }}
+
+        <label for="password">Password</label>
+        {{ form.password(class="pwdInput", placeholder="Sua senha") }}
+
+        <label for="rememberMe">Lembrar de mim</label>
+        {{ form.rememberMe }}
+
+        <label for="submit"></label>
+        <button type="submit">Fazer login</button>
+    </form>
+</body>
+</html>
