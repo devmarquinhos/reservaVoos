@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Velvet - Register</title>
+</head>
+<body>
+    <h1>Página de registro</h1>
+    <form action="" method="POST">
+        {{ form.crsf_token }}
+
+        <!-- Input para o nome do usuário -->
+        <label for="username">Usuário</label>
+        {{ form.username(class="userInput", placeholder="Nome de usuário") }}
+
+        <!-- Input para a senha -->
+        <label for="password">Senha</label>
+        {{ form.password(class="pwdInput", placeholder="Sua senha") }}
+
+        <!-- Input para confirmar a senha -->
+        <label for="password">Confirme a senha</label>
+        {{ form.password(class="pwdInput", placeholder="Sua senha")}}
+
+        <!-- Checkbox para concordar com os termos -->
+        {{ form.confirm }}
+        <label for="confirm">Concordo com os termos LGPD</label>
+
+        <!-- Botão para se cadastrar-->
+        <label for="submit"></label>
+        <button type="submit">Criar conta</button>
+    </form>
+</body>
+</html>

@@ -14,7 +14,9 @@
     {% if user %} <!-- Sintaxe Jinja (ou Python) para usar uma condicional dentro do HTML-->
         <p>Bem-vindo ao sistema {{ user }}.</p>
     {% else %}
-        <p>Bem-vindo ao sistema, faça um cadastro para continuar.</p>
+        <p>Bem-vindo ao sistema, faça um login ou se cadastre para continuar.</p>
+        <a href="./login.html">Fazer Login</a>
+        <a href="./register.html">Criar conta</a>
     {% endif %}
 
     <script src="{{ url_for('static', filename="js/script.js") }}"></script>
