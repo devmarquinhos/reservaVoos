@@ -1,6 +1,7 @@
 from flask import render_template
-from app import app
+from app import app, db
 from app.models.forms import LoginForm, RegisterForm
+from app.models.tables import User
 
 @app.route("/index/<user>")
 @app.route("/", defaults={"user":None}) # Rota padrão com um Hello World
@@ -32,3 +33,12 @@ def register():
         print(form.errors)
         
     return render_template('register.html', form= form)
+
+
+@app.route("/teste/<info>")
+@app.route("/teste", defaults={"info": None})
+def teste(info):
+    i = User("1", "Julia Rizza", "1234", "juliarizza@email.com")
+    db.session.add(i)
+    db.session.commit()
+    return "Ok"

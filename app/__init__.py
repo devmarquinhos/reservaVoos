@@ -8,4 +8,5 @@ db = SQLAlchemy(app) # Criando o banco de dados
 migrate = Migrate(app, db) # Instancia para o Migrate cuidar da aplicação, recebendo tanto a aplicação quanto o banco de dados
 
 
+from app.models import tables, forms
 from app.controllers import default # Importando as routes do Flask
