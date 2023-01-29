@@ -16,7 +16,7 @@ class RegisterFlight(FlaskForm):
     flightNumber = fields.IntegerField("flightNumber", validators=[DataRequired()])
     departureAirport = fields.StringField("departureAirport", validators=[DataRequired()])
     arrivalAirport = fields.StringField("arrivalAirport", validators=[DataRequired()])
-    flightDate = fields.DateField("flightDate", validators=[DataRequired()])
+    flightDate = fields.StringField("flightDate", validators=[DataRequired()])
     aircraft = fields.StringField("aircraft", validators=[DataRequired()])
     pax_available = fields.IntegerField("pax_available", validators=[DataRequired()])
     pax_booked = fields.IntegerField("pax_booked", validators=[DataRequired()])
