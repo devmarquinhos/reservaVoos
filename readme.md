@@ -31,10 +31,10 @@ Sistema que retorna ao usuário todas as informações dos voos disponíveis daq
 - Flask
 - Git e Github
 
-## :: Layout
+## :art: Layout
 
 Você pode ver o layout do projeto clicando [aqui](https://www.figma.com/file/n54XCyc9gTtYrJoePwZlp4/PurpleVelvet?node-id=2%3A3&t=YDyKWHZPmOJ1grVb-0). É necessário ter uma conta no [Figma](https://figma.com) para acessar.
 
-## :warning: Licença
+## :memo: Licença
 
 Este projeto está sob a licença MIT.
