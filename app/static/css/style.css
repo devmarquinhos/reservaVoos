@@ -14,7 +14,8 @@ body {
 
     background-image: url(../img/desktop-bg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: top center;
 }
 
 .container h1 {
