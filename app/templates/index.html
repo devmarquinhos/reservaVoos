@@ -13,22 +13,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename="css/style.css") }}">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div>
-                <h1>Purple Velvet</h1>
-                {% if user %} <!-- Sintaxe Jinja (ou Python) para usar uma condicional dentro do HTML-->
-                    <p>Bem-vindo ao sistema {{ user }}.</p>
-                {% else %}
-                    <p>Bem-vindo ao sistema, faça um login ou se cadastre para continuar.</p>
-                    <div class="buttons">
-                        <a href="./login.html" id="loginButton">Fazer Login</a>
-                        <a href="./register.html" id="registerButton">Criar conta</a>
-                    </div>
-                {% endif %}
+    <div class="container">
+        <h1>Purple Velvet</h1>
+        {% if user %} <!-- Sintaxe Jinja (ou Python) para usar uma condicional dentro do HTML-->
+            <p>Bem-vindo ao sistema {{ user }}.</p>
+        {% else %}
+            <p>Bem-vindo ao sistema, faça um login ou se cadastre para continuar.</p>
+            <div class="buttons">
+                <a href="./login.html" id="loginButton">Fazer Login</a>
+                <a href="./register.html" id="registerButton">Criar conta</a>
             </div>
-        </div>
-    </main>
+        {% endif %}
+    </div>
+    
     <script src="{{ url_for('static', filename="js/script.js") }}"></script>
 </body>
 </html>
