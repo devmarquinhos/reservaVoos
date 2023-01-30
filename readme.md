@@ -12,7 +12,7 @@
 
 ## :computer: Projeto
 
-Sistema que retorna ao usuário todas as informações dos voos disponíveis daquele dia, caso o usuário seja um administrador do sistema, o mesmo pode editar, apagar ou registar novos voos no sistema.
+Sistema que retorna ao usuário todas as informações dos voos disponíveis daquele dia, caso o usuário seja um administrador do sistema, o mesmo pode editar, apagar ou registar novos voos no sistema. Esse projeto foi idealizado pela [Rafa Ballerini](https://github.com/rafaballerini) em uma das "Tecnologias da Semana" (um evento que acontecia no Discord da mesma.) e aplicado por mim para um projeto de POO para a faculdade.
 
 ## :rocket: Tecnologias
 
