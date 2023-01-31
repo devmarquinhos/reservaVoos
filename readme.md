@@ -1,4 +1,4 @@
-<h1 align="center">Reserva de Voos</h1>
+<h1 align="center">Purple Velvet</h1>
 
 <img src=".github/preview.png" alt="Preview Purple Velvet, sistema de reserva de voos">
 
