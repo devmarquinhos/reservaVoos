@@ -1,5 +1,7 @@
 <h1 align="center">Reserva de Voos</h1>
 
+<img src=".github/preview.png" alt="Preview Purple Velvet, sistema de reserva de voos">
+
 ---
 <p align="center">
   <a href="#computer-Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
