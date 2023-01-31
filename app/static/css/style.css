@@ -19,6 +19,7 @@ body {
 }
 
 .container h1 {
+    font-weight: 700;
     color: #7B2CBF;
 }
 
@@ -51,6 +52,7 @@ body {
 .container a {
     text-decoration: none;
     padding: 16px;
+    font-weight: 500;
 }
 
 #loginButton {
