@@ -32,13 +32,13 @@
             {{ form.hidden_tag() }}
 
             <!-- Checkbox para lembrar do usuário -->
-            {{ form.rememberMe }}
+            {{ form.rememberMe(id="rememberMe") }}
             {{ form.hidden_tag() }}
             <label for="rememberMe">Lembrar de mim</label>
 
             <!-- Botão para confirmar -->
             <label for="submit"></label>
-            <button type="submit">Fazer login</button>
+            <button type="submit" id="submitButton">Fazer login</button>
         </form>
     </div>
 </body>
