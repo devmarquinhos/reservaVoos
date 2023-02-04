@@ -9,7 +9,6 @@ def index(user):
     return render_template('index.html', user= user)
 
 @app.route("/login", methods=["GET", "POST"])
-@app.route("/login.html", methods=["GET", "POST"])
 def login():
     form = LoginForm()
     
