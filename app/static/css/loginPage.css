@@ -57,3 +57,47 @@ form label {
     color: #7B2CBF;
     padding: 48px;
 }
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+form div input {
+    appearance: checkbox;
+    --webkit-appearence: checkbox;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid #8C8C8C;
+    background-color: #040404;
+    border-radius: 2px;
+}
+
+form div input:checked {
+    background: #7B2CBF;
+    border: 2px solid #8C8C8C;
+}
+
+#submitButton {
+    cursor: pointer;
+    width: 120px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: 500;
+    color: white;
+    background-color: #7B2CBF;
+    
+    padding: 16px;
+
+    transition: all .2s;
+}
+
+#submitButton:hover {
+    background-color: #541f83;
+}

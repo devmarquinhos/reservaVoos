@@ -15,13 +15,13 @@ def login():
     if form.validate_on_submit():
         print(form.username.data)
         print(form.password.data)
+        print(form.rememberMe.data)
     else:
         print(form.errors)
         
     return render_template('login.html', form= form)
 
 @app.route("/register", methods=["GET", "POST"])
-@app.route("/register.html", methods=["GET", "POST"])
 def register():
     form = RegisterForm()
     
