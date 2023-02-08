@@ -25,9 +25,12 @@ def login():
 def register():
     form = RegisterForm()
     
+    # Precisa corrigir isso, por alguma razão ele copia o conteúdo do input password para o confirmPwd
     if form.validate_on_submit():
         print(form.username.data)
         print(form.password.data)
+        if form.password.data != form.confirmPwd.data:
+            print("As senhas precisam ser iguais")
     else:
         print(form.errors)
         

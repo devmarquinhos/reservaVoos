@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Página de login</h1>
+        <h1>Faça Login na plataforma</h1>
         <form action="" method="POST">
             <!-- Secret Key para segurança do formulário -->
             {{ form.csrf_token }}
@@ -28,7 +28,7 @@
 
             <!-- Input para a senha -->
             <label for="password">Senha</label>
-            {{ form.password(class="pwdInput", placeholder="Sua senha") }}
+            {{ form.password(type="password", class="pwdInput", placeholder="Sua senha") }}
             {{ form.hidden_tag() }}
 
             <!-- Checkbox para lembrar do usuário -->

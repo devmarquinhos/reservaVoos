@@ -56,6 +56,7 @@ form label {
     font-weight: 700;
     color: #7B2CBF;
     padding: 48px;
+    font-size: 24px;
 }
 
 form div {
@@ -84,12 +85,13 @@ form div input:checked {
 
 #submitButton {
     cursor: pointer;
-    width: 120px;
+    width: 140px;
 
     border: none;
     border-radius: 6px;
 
     font-weight: 500;
+    font-size: 18px;
     color: white;
     background-color: #7B2CBF;
     

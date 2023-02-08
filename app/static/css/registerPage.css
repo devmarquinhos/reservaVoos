@@ -1,3 +1,114 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+
+    background-image: url(../img/desktop-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.container {
+    color: white;
+    width: 420px;
+    background: #080808;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userInput, .pwdInput {
+    width: 360px;
+    height: 60px;
+    padding: 16px;
+    background: #040404;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#submitButton {
+    cursor: pointer;
+    width: 140px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    background-color: #7B2CBF;
+    
+    padding: 16px;
+    margin-bottom: 48px;
+    transition: all .2s;
+}
+
+#submitButton:hover {
+    background-color: #541f83;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form label {
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+form div input {
+    appearance: checkbox;
+    --webkit-appearence: checkbox;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid #8C8C8C;
+    background-color: #040404;
+    border-radius: 2px;
+}
+
+form div input:checked {
+    background: #7B2CBF;
+    border: 2px solid #8C8C8C;
+}
+
+
+.container h1 {
+    font-weight: 700;
+    color: #7B2CBF;
+    /* padding: 48px; */
+    margin: 48px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 16px;
 }

@@ -10,6 +10,7 @@ class LoginForm(FlaskForm):
 class RegisterForm(FlaskForm):
     username = fields.StringField("username", validators=[DataRequired()])
     password = fields.StringField("password", validators=[DataRequired()])
+    confirmPwd = fields.PasswordField("confirmPwd", validators=[DataRequired()])
     confirm = fields.BooleanField("confirm", validators=[DataRequired()])
     
 class RegisterFlight(FlaskForm):
